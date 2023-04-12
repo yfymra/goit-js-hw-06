@@ -10,7 +10,7 @@ function onFormSubmit(event) {
     const password = formElements.password.value;
 
     if (!email  || !password) {
-        alert('All fields must be completed')
+        alert('All fields must be completed');
         return;
     } 
 

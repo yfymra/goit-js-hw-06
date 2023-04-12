@@ -1,7 +1,7 @@
 const inputEl = document.querySelector("#validation-input");
 inputEl.addEventListener('blur', onInputElValidation);
 
-function onInputElValidation(event) {
+/*function onInputElValidation(event) {
     const eventEl = event.currentTarget;
 
     if (Number(eventEl.value.trim().length) !== Number(eventEl.dataset.length)) {
@@ -12,6 +12,17 @@ function onInputElValidation(event) {
         eventEl.classList.add('valid');
     }
 
+}*/
+
+function onInputElValidation(event) {
+    const eventEl = event.currentTarget;
+
+    if (Number(eventEl.value.trim().length) !== Number(eventEl.dataset.length)) {
+        eventEl.classList.remove('valid');
+        return eventEl.classList.add('invalid');
+    } 
+        eventEl.classList.remove('invalid');
+        return eventEl.classList.add('valid');
 }
 
 
