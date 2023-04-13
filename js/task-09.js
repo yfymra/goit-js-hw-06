@@ -12,7 +12,6 @@ changeColorBtnEl.addEventListener('click', () => {
   const color = getRandomHexColor();
   colorValueEl.textContent = color;
   bodyEl.style.backgroundColor = color;
-  return color;
 });
 
 /*changeColorBtnEl.addEventListener('click', onChangeBodyElColor);
@@ -22,5 +21,4 @@ function onChangeBodyElColor(event) {
   colorValueEl.textContent = color;
 
   bodyEl.style.backgroundColor = color;
-  return color;
 }*/
